@@ -9,15 +9,21 @@
         android:orientation="vertical">
 
         <ImageView
+            android:scaleType="centerCrop"
             android:id="@+id/modImagemProduto"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="250dp"
-            android:src="#2c2c2c" />
+            android:src="@draw" />
         <TextView
+            android:fontFamily="@font/natasans_bold"
+            android:layout_marginTop="5sp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
             android:id="@+id/modTituloProduto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Título do produto"/>
-        
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>

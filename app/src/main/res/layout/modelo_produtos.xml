@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardProdutos"
     android:layout_width="200dp"
     android:layout_height="300dp">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <ImageView
-            android:scaleType="centerCrop"
             android:id="@+id/modImagemProduto"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/notebook"
             android:layout_gravity="left"
-            />
+            android:scaleType="centerCrop"
+            android:src="@drawable/notebook" />
+
         <TextView
-            android:fontFamily="@font/natasans_bold"
-            android:layout_marginTop="5sp"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:layout_gravity="center_horizontal"
             android:id="@+id/modTituloProduto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Título do produto"/>
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/natasans_bold"
+            android:text="Título do produto"
+            android:textAlignment="center"
+            android:textSize="15sp" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

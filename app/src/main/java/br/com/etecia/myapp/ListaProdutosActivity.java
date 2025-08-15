@@ -33,15 +33,15 @@ public class ListaProdutosActivity extends AppCompatActivity {
         //criando um array
         lstProdutos = new ArrayList<>();
         lstProdutos.add(new Produtos("UP", R.drawable.cadeiragamer));
-        lstProdutos.add(new Produtos("UP", R.drawable.calculadora));
-        lstProdutos.add(new Produtos("UP", R.drawable.gatorosa));
-        lstProdutos.add(new Produtos("UP", R.drawable.lancheira));
-        lstProdutos.add(new Produtos("UP", R.drawable.minisakoarigatok));
-        lstProdutos.add(new Produtos("UP", R.drawable.notebook));
-        lstProdutos.add(new Produtos("UP", R.drawable.cadeiragamer));
-        lstProdutos.add(new Produtos("UP", R.drawable.cadeiragamer));
-        lstProdutos.add(new Produtos("UP", R.drawable.cadeiragamer));
-        lstProdutos.add(new Produtos("UP", R.drawable.cadeiragamer));
+        lstProdutos.add(new Produtos("Digit", R.drawable.calculadora));
+        lstProdutos.add(new Produtos("Oval", R.drawable.gatorosa));
+        lstProdutos.add(new Produtos("Lancheira", R.drawable.lancheira));
+        lstProdutos.add(new Produtos("HelloKitty", R.drawable.minisakoarigatok));
+        lstProdutos.add(new Produtos("ASUS", R.drawable.notebook));
+        lstProdutos.add(new Produtos("Instax", R.drawable.camera));
+        lstProdutos.add(new Produtos("Garrafa Rosa", R.drawable.garrafarosa));
+        lstProdutos.add(new Produtos("Teclado", R.drawable.teclado));
+        lstProdutos.add(new Produtos("Spiral", R.drawable.tesoura));
 
         idListadeProdutos = findViewById(R.id.idListaProdutos);
 

@@ -7,8 +7,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ListaProdutosActivity extends AppCompatActivity {
+
+    RecyclerView idListadeProdutos;
+    List<Produtos> lstProdutos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +27,20 @@ public class ListaProdutosActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        //criando um array
+        lstProdutos = new ArrayList<>();
+        lstProdutos.add(new Produtos("UP", R.drawable.cadeiragamer));
+        lstProdutos.add(new Produtos("UP", R.drawable.calculadora));
+        lstProdutos.add(new Produtos("UP", R.drawable.gatorosa));
+        lstProdutos.add(new Produtos("UP", R.drawable.lancheira));
+        lstProdutos.add(new Produtos("UP", R.drawable.minisakoarigatok));
+        lstProdutos.add(new Produtos("UP", R.drawable.notebook));
+        lstProdutos.add(new Produtos("UP", R.drawable.cadeiragamer));
+        lstProdutos.add(new Produtos("UP", R.drawable.cadeiragamer));
+        lstProdutos.add(new Produtos("UP", R.drawable.cadeiragamer));
+        lstProdutos.add(new Produtos("UP", R.drawable.cadeiragamer));
+
+        idListadeProdutos = findViewById(R.id.idListaProdutos);
+
     }
 }
